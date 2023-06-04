@@ -1,0 +1,85 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=PT+Serif&display=swap");
+/* .navbar{
+  background: transparent !important;
+  backdrop-filter: blur(10px) !important;
+} */
+
+/* === Font === */
+a {
+    text-decoration: none;
+}
+h1 {
+    font-family: "PT Serif", serif;
+    font-weight: bold;
+    /* font-size: 60px; */
+}
+p {
+    font-family: "Comfortaa", cursive;
+}
+
+/* === Logout === */
+.icn-akun {
+    width: 35px;
+    height: 35px;
+}
+
+/* === Spasi === */
+#spasi {
+    margin-bottom: 80px;
+}
+#spasi_admin {
+    margin-bottom: 68px;
+}
+
+/* === Media Query === */
+@media (max-width: 768px) {
+    #navbar .iconic {
+        display: none;
+    }
+    #navbar .layout_fitur {
+        justify-content: center !important;
+        background-color: aqua !important;
+    }
+}
+
+/* === Navbar === */
+.navbar {
+    background-color: #f3f3f3;
+}
+
+#navbar2 {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    #navbar1 {
+        display: none;
+    }
+    #navbar2 {
+        display: contents;
+    }
+    #home {
+        height: 100vh;
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+}
+
+/* Lebar Navbar*/
+@media (max-width: 768px) {
+    #offcanvasNavbar {
+        width: 75%;
+    }
+}
+
+/* === Menghilangkan tampilan lingkaran radio === */
+.form-check-input[type="radio"] {
+    display: none;
+}
+
+/* === Mengubah tampilan tombol saat terpilih === */
+.form-check-input[type="radio"]:checked + label .btn {
+    background-color: #3e82ca; /* warna latar belakang saat terpilih */
+    color: #fff; /* warna teks saat terpilih */
+}
